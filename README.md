@@ -13,4 +13,4 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 * Dr. Tyler Williamson (co-PI; Alberta)
 
 ## Repository directory:
-[Reports]()
+[Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports)
