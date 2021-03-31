@@ -9,11 +9,51 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 ## Principal investigators (PI):
 * Dr. Sharmistha Mishra (nominated PI; Ontario)
 * Dr. Stefan D. Baral (co-PI)
+* Dr. Caroline Colijn (co-PI; British Columbia)
 * Dr. Naveed Janjua (co-PI; British Columbia)
 * Dr. Alan Katz (co-PI; Manitoba)
 * Dr. Jeffrey C. Kwong (co-PI; Ontario)
 * Dr. Mathieu Maheu-Giroux (co-PI; Quebec)
+* Dr. Beate Sander (co-PI; Ontario)
 * Dr. Tyler Williamson (co-PI; Alberta)
 
+## Co-investigators:
+
+### Alberta
+* Dr. Catherine Eastwood
+
+### British Columbia
+* Dr. Fiona Brinkman
+* Dr. Mike Irvine
+* Dr. Jeffrey Joy
+* Dr. Mel Krajden
+* Dr. Michael Otterstatter
+* Dr. Sally Otto
+
+### Ontario
+* Dr. Isaac Bogoch
+* Dr. Adrienne Chan
+* Dr. Troy Day
+* Dr. David Earn
+* Dr. Kamran Khan
+* Dr. Rafal Kustra
+* Dr. Allison McGeer
+* Dr. Samira Mubareka
+* Dr. Kumar Murty
+* Dr. Art Poon
+* Dr. Janet Smylie
+* Linwei Wang
+* Dr. Jianhong Wu
+
+### Quebec
+* Dr. Marc Brisson
+* Dr. David Buckeridge
+* Dr. Simon de Montigny
+* Dr. Benoit Masse
+
+### Other
+* Dr. Marie-Claude Boily
+
 ## Directory:
+[Publications](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/publications/)
 [Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) 
