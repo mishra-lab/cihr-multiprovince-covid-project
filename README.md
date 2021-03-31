@@ -9,12 +9,10 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 ## Principal investigators (PI):
 * Dr. Sharmistha Mishra (nominated PI; Ontario)
 * Dr. Stefan D. Baral (co-PI)
-* Dr. Caroline Colijn (co-PI; British Columbia)
 * Dr. Naveed Janjua (co-PI; British Columbia)
 * Dr. Alan Katz (co-PI; Manitoba)
 * Dr. Jeffrey C. Kwong (co-PI; Ontario)
 * Dr. Mathieu Maheu-Giroux (co-PI; Quebec)
-* Dr. Beate Sander (co-PI; Ontario)
 * Dr. Tyler Williamson (co-PI; Alberta)
 
 ## Co-investigators:
@@ -24,6 +22,7 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 
 ### British Columbia
 * Dr. Fiona Brinkman
+* Dr. Caroline Colijn 
 * Dr. Mike Irvine
 * Dr. Jeffrey Joy
 * Dr. Mel Krajden
@@ -41,6 +40,7 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 * Dr. Samira Mubareka
 * Dr. Kumar Murty
 * Dr. Art Poon
+* Dr. Beate Sander 
 * Dr. Janet Smylie
 * Linwei Wang
 * Dr. Jianhong Wu
