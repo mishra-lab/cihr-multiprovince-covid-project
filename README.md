@@ -2,7 +2,9 @@
 Evaluating the differential impact of what we have done, as we prioritize what to do next: a multi-provincial intervention modeling study using population-based data 
 
 ## Funding:
-Canadian Institutes of Health Research Operating Grant: COVID-19 May 2020 Rapid Research Funding Opportunity competition 
+* Canadian Institutes of Health Research Operating Grant: COVID-19 May 2020 Rapid Research Funding Opportunity competition
+* Canadian Institutes of Health Research Operating Grant: SARS-CoV-2 variants supplement stream 1 (acceleration of research on SARS-CoV-2 variants): COVID-19 Rapid Research 
+* Canadian Institutes of Health Research Operating Grant: SARS-CoV-2 variants supplement stream 2 (formulation of network): COVID-19 Rapid Research Funding Opportunity
 
 ## Principal investigators (PI):
 * Dr. Sharmistha Mishra (nominated PI; Ontario)
@@ -14,4 +16,4 @@ Canadian Institutes of Health Research Operating Grant: COVID-19 May 2020 Rapid 
 * Dr. Tyler Williamson (co-PI; Alberta)
 
 ## Directory:
-[Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) - includes reports for Ministry of Health
+[Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) 
