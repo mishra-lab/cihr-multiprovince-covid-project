@@ -55,5 +55,5 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 * Dr. Marie-Claude Boily
 
 ## Directory:
-[Publications](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/publications/)
-[Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) 
+* [Publications](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/publications/)
+* [Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) 
