@@ -8,7 +8,7 @@ We compared per-capita rates of COVID-19 cases and deaths from January 23, 2020 
 
 Findings suggest that the population who continued to serve the essential needs of society throughout COVID-19 shouldered a disproportionate burden of transmission and deaths. Taken together, results signal the need for active intervention strategies to complement restrictive measures to optimize both the equity and effectiveness of COVID-19 responses.
 
-This report as available as a [preprint](https://www.medrxiv.org/content/10.1101/2021.02.15.21251572v1.full-text) on medRxiv.
+This report is available as a [preprint](https://www.medrxiv.org/content/10.1101/2021.02.15.21251572v1.full-text) on medRxiv.
 
 This work is supported by Canadian Institutes of Health Research Operating Grant: COVID-19 Rapid Research Funding Opportunity.
 
@@ -27,7 +27,7 @@ This work is supported by Canadian Institutes of Health Research Operating Grant
 
 ## Summary of data sources
 ### COVID-19 cases
-This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1AC_cases.csv) includes community cases (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. The case data were obtained from Contact Management Solutions (CCM)+. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1AC_cases.csv) includes community cases (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
 
 We stratified the city’s 3702 dissemination areas (DA; geographic area of approximately 400-700 individuals) into tertiles by ranking the proportion of population in each DA working in essential services (health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture).
 
@@ -41,9 +41,7 @@ The dataset includes the following information organized by tertiles:
 * Rolling new cases per 100k
 
 ### COVID-19 deaths
-This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1BD_death.csv) includes community deaths (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. 
-
-The data on deaths were obtained from Contact Management Solutions (CCM)+. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1BD_death.csv) includes community deaths (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. Person-level data on confirmed COVID-19 deaths were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
 
 We stratified the city’s 3702 DA into tertiles by ranking the proportion of population in each DA working in essential services.
 
