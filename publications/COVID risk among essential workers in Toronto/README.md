@@ -11,6 +11,7 @@ Findings suggest that the population who continued to serve the essential needs 
 This report as available as a [preprint](https://www.medrxiv.org/content/10.1101/2021.02.15.21251572v1.full-text) on medRxiv.
 
 ## Authors and contact information
+<div style="white-space: pre">
 Amrita Rao*: [arao24@jhu.edu](mailto:arao24@jhu.edu)
 Huiting Ma*: [huiting.ma@unityhealth.to](mailto:huiting.ma@unityhealth.to)
 Gary Moloney: [gary.moloney@unityhealth.to](mailto:gary.moloney@unityhealth.to)
@@ -20,5 +21,6 @@ Beate Sander: [beate.sander@uhnresearch.ca](mailto:beate.sander@uhnresearch.ca)
 Rafal Kustra: [r.kustra@utoronto.ca](mailto:r.kustra@utoronto.ca)
 Stefan D. Baral: [sbaral@jhu.edu](mailto:sbaral@jhu.edu)
 Sharmistha Mishra: [sharmistha.mishra@utoronto.ca](mailto:sharmistha.mishra@utoronto.ca)
+</div>
 
 *Equal contribution/co-first authors
