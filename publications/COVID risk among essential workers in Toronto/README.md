@@ -21,4 +21,4 @@ Rafal Kustra:
 Stefan D. Baral:
 Sharmistha Mishra:
 
-* Equal contribution/co-first authors
+*Equal contribution/co-first authors
