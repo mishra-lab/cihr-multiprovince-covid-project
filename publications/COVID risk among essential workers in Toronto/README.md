@@ -25,6 +25,37 @@ This work is supported by Canadian Institutes of Health Research Operating Grant
 
 *Equal contribution/co-first authors
 
+## Summary of data sources
+### COVID-19 cases
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1AC_cases.csv) includes community cases (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. The case data were obtained from Contact Management Solutions (CCM)+. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
+
+We stratified the city’s 3702 dissemination areas (DA; geographic area of approximately 400-700 individuals) into tertiles by ranking the proportion of population in each DA working in essential services (health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture).
+
+The dataset includes the following information organized by tertiles:
+* Case reported date
+* Total new cases
+* Total cumulative cases
+* Population
+* Total new cases per 100k
+* Total cumulative cases per 100k
+* Rolling new cases per 100k
+
+### COVID-19 deaths
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1BD_death.csv) includes community deaths (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. 
+
+The data on deaths were obtained from Contact Management Solutions (CCM)+. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
+
+We stratified the city’s 3702 DA into tertiles by ranking the proportion of population in each DA working in essential services.
+
+The dataset includes the following information organized by tertiles:
+* Reported date of death
+* Total new deaths
+* Total cumulative deaths
+* Population
+* Total new deaths per 100k
+* Total cumulative deaths per 100k
+* Rolling new deaths per 100k
+
 ## Figure legends
 ### [Figure 1 A&B](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/4d251054a71f4bdb9ec545bfe971d68441ef89eb/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1_Final.png). Daily per-capita COVID-19 cases (A) and deaths (B) by neighbourhood-level proportion of essential workers in Toronto, Canada (January 23, 2020 to January 24, 2021).
 The daily per-capita rate is depicted as a 7-day rolling average. Stratum1 represents neighbourhooods with the smallest proportion of the population working in essential services, while stratum3 represents neighbourhoods with the highest proportion essential workers. Cases and deaths do not include residents of long-term care homes. Essential services include: health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture. Closure of non-essential workplaces are indicated by (a) at start of first lockdown on March 17, 2020 to the re-opening on May 18, 2020 (b), and (c) indicating the start of the 2nd-major restriction on November 23to (d) the start of a more stringentlockdown on December 26, 2020. 
