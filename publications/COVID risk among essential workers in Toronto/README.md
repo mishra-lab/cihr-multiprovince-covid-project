@@ -12,13 +12,13 @@ This report as available as a [preprint](https://www.medrxiv.org/content/10.1101
 
 ## Authors and contact information
 Amrita Rao*: [arao24@jhu.edu](mailto:arao24@jhu.edu)
-Huiting Ma*:
-Gary Moloney:
-Jeffrey C. Kwong:
-Peter Juni:
-Beate Sander:
-Rafal Kustra:
-Stefan D. Baral:
-Sharmistha Mishra:
+Huiting Ma*: [huiting.ma@unityhealth.to](mailto:huiting.ma@unityhealth.to)
+Gary Moloney: [gary.moloney@unityhealth.to](mailto:gary.moloney@unityhealth.to)
+Jeffrey C. Kwong: [jeff.kwong@utoronto.ca](mailto:jeff.kwong@utoronto.ca)
+Peter Juni: [peter.juni@utoronto.ca](mailto:peter.juni@utoronto.ca)
+Beate Sander: [beate.sander@uhnresearch.ca](mailto:beate.sander@uhnresearch.ca)
+Rafal Kustra: [r.kustra@utoronto.ca](mailto:r.kustra@utoronto.ca)
+Stefan D. Baral: [sbaral@jhu.edu](mailto:sbaral@jhu.edu)
+Sharmistha Mishra: [sharmistha.mishra@utoronto.ca](mailto:sharmistha.mishra@utoronto.ca)
 
 *Equal contribution/co-first authors
