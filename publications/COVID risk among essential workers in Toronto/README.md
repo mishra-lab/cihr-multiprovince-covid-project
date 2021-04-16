@@ -1,5 +1,5 @@
 # COVID-19 cases and deaths among essential workers in Toronto, Canada
-This repo contains data and code for generating per-capita daily epidemic curves and cumulative per-capita rates in our report titled "A disproportionate epidemic: COVID-19 cases and deaths among essential workers in Toronto, Canada".
+This repo contains codes and output figures of per-capita daily epidemic curves and cumulative per-capita rates used our report titled "A disproportionate epidemic: COVID-19 cases and deaths among essential workers in Toronto, Canada".
 
 ## Summary of work
 Shelter-in-place mandates and closure of non-essential businesses have been central to COVID-19 response strategies including in Toronto, Canada. Approximately half of the working population in Canada are employed in occupations that do not allow for remote work suggesting potentially limited impact of some of the strategies proposed to mitigate COVID-19 acquisition and onward transmission risks and associated morbidity and mortality. 
@@ -9,6 +9,8 @@ We compared per-capita rates of COVID-19 cases and deaths from January 23, 2020 
 Findings suggest that the population who continued to serve the essential needs of society throughout COVID-19 shouldered a disproportionate burden of transmission and deaths. Taken together, results signal the need for active intervention strategies to complement restrictive measures to optimize both the equity and effectiveness of COVID-19 responses.
 
 This report as available as a [preprint](https://www.medrxiv.org/content/10.1101/2021.02.15.21251572v1.full-text) on medRxiv.
+
+This work is supported by Canadian Institutes of Health Research Operating Grant: COVID-19 Rapid Research Funding Opportunity.
 
 ## Authors and contact information
 * Amrita Rao*: [arao24@jhu.edu](mailto:arao24@jhu.edu)
@@ -22,3 +24,4 @@ This report as available as a [preprint](https://www.medrxiv.org/content/10.1101
 * Sharmistha Mishra: [sharmistha.mishra@utoronto.ca](mailto:sharmistha.mishra@utoronto.ca)
 
 *Equal contribution/co-first authors
+
