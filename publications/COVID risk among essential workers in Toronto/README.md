@@ -25,3 +25,6 @@ This work is supported by Canadian Institutes of Health Research Operating Grant
 
 *Equal contribution/co-first authors
 
+## Figure legends
+### [Figure 1](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/4d251054a71f4bdb9ec545bfe971d68441ef89eb/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1_Final.png). Daily per-capita COVID-19 cases (A) and deaths (B) by neighbourhood-level proportion of essential workers in Toronto, Canada (January 23, 2020 to January 24, 2021).
+The daily per-capita rate is depicted as a 7-day rolling average. Stratum1 represents neighbourhooods with the smallest proportion of the population working in essential services, while stratum3 represents neighbourhoods with the highest proportion essential workers. Cases and deaths do not include residents of long-term care homes. Essential services include: health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture. Closure of non-essential workplaces are indicated by (a) at start of first lockdown on March 17, 2020 to the re-opening on May 18, 2020 (b), and (c) indicating the start of the 2nd-major restriction on November 23to (d) the start of a more stringentlockdown on December 26, 2020. 
