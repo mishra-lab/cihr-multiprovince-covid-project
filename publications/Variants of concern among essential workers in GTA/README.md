@@ -1,5 +1,5 @@
-# SARS-CoV-2 Variants of Concern among Essential Workers in Greater Toronto Area
-This repo contains codes and output figures of per-capita daily epidemic curves and cumulative per-capita rates used our report titled "A disproportionate epidemic: COVID-19 cases and deaths among essential workers in Toronto, Canada".
+# SARS-CoV-2 Variants of Concern among essential workers in Greater Toronto Area
+This repo contains codes and output figures of per-capita daily epidemic curves and cumulative per-capita rates used our paper titled "Characterizing the disproportionate burden of SARS-CoV-2 variants of concern among essential workers in the Greater Toronto Area, Canada".
 
 ## Summary of work
 The emergence of SARS-CoV-2 Variants of Concern (VOC) across North America has been associated with concerns of increased COVID-19 transmission.  Characterizing the distribution of VOCs can inform the development and implementation of policies and programs to address the prevention needs of disproportionately affected communities. 
