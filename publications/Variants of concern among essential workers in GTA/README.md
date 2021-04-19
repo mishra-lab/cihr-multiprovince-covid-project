@@ -27,3 +27,6 @@ This dataset includes laboratory-confirmed COVID-19 community cases (excluding l
 
 We stratified the dissemination areas (DA; geographic area of approximately 400-700 individuals) into tertiles by ranking the proportion of population in each DA working in essential services (health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture) and the per-person equivalent household income.
 
+## Figure legends
+### Figure 1. Daily rates and cumulative COVID-19 overall and VOC cases in Toronto and Peel regions, Canada (February 3 - March 10, 2021), by neighbourhood-level prevalence of essential workers.
+By March 7, the 7-day rolling average had reached 8.0, 14.1, and 20.0 per 100,000 population in tertiles 1, 2, and 3 respectively (A); and VOC daily rates were at 3.5, 6.6, and 10.1 per 100,000 population in tertiles 1, 2, and 3 respectively (B). Cumulative number of cases, stratified by tertiles are shown for overall cases (C) and VOC cases (D). VOC (variants of concern, detected via N501Y screening). Cases exclude those diagnosed among residents of long-term care homes.
