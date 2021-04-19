@@ -22,3 +22,8 @@ This work is supported by Canadian Institutes of Health Research Operating Grant
 *Equal contribution/co-senior responsible authors
 
 ## Summary of data sources
+### COVID-19 cases
+This dataset includes laboratory-confirmed COVID-19 community cases (excluding long-term care cases) reported between February 3 and March 10, 2021 in the City of Toronto and Region of Peel. Person-level data on VOC screen positive cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
+
+We stratified the dissemination areas (DA; geographic area of approximately 400-700 individuals) into tertiles by ranking the proportion of population in each DA working in essential services (health, trades, transport, equipment, manufacturing, utilities, sales, services, agriculture) and the per-person equivalent household income.
+
