@@ -56,4 +56,4 @@ Evaluating the differential impact of what we have done, as we prioritize what t
 
 ## Directory:
 * [Publications](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/publications/)
-* [Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/main/Reports) 
+* [Reports](https://github.com/mishra-lab/cihr-multiprovince-covid-project/tree/c766f5e74e3f7e9d19098ba1d4ae0c66b0325011/reports) 
