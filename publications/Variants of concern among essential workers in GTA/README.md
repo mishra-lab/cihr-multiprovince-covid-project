@@ -11,16 +11,16 @@ During the study period, VOC cases emerged faster in groups with lowest income (
 
 The recent introduction of VOC in the large urban area of Toronto has disproportionately affected neighbourhoods with the most essential workers and lowest income levels. Notably, this is consistent with the increased burden of non-VOC COVID-19 cases suggesting shared risk factors. To date, restrictive public health strategies have been of limited impact in these communities suggesting the need for complementary and well-specified supportive strategies including vaccine prioritization to address disparities and overall incidence of both VOC and non-VOC COVID-19.
 
-This report is available as a preprint on medRxiv.
+This report is available as a [preprint](https://www.medrxiv.org/content/10.1101/2021.03.22.21254127v1) on medRxiv.
 
 This work is supported by Canadian Institutes of Health Research Operating Grant: COVID-19 Rapid Research Funding Opportunity.
 
 ## Authors and contact information
-•	Zain Chagla: [chaglaz@mcmaster.ca](mailto:chaglaz@mcmaster.ca)
-•	Huiting Ma: huiting.ma@unityhealth.to
-•	Beate Sander: beate.sander@uhnresearch.ca
-•	Stefan D. Baral*: sbaral@jhu.edu
-•	Sharmistha Mishra*: sharmistha.mishra@utoronto.ca
+* Zain Chagla: [chaglaz@mcmaster.ca](mailto:chaglaz@mcmaster.ca)
+* Huiting Ma: [huiting.ma@unityhealth.to](mailto:huiting.ma@unityhealth.to)
+* Beate Sander: [beate.sander@uhnresearch.ca](mailto:beate.sander@uhnresearch.ca)
+* Stefan D. Baral*: [sbaral@jhu.edu](mailto:sbaral@jhu.edu)
+* Sharmistha Mishra*: [sharmistha.mishra@utoronto.ca](mailto:sharmistha.mishra@utoronto.ca)
 *Equal contribution/co-senior responsible authors
 
 ## Summary of data sources
