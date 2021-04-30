@@ -38,7 +38,7 @@ The dataset includes the following information organized by tertiles:
 * Population
 * Total new cases per 100k
 * Total cumulative cases per 100k
-* Rolling new cases per 100k
+* 7-day rolling average of new cases
 
 ### COVID-19 deaths
 This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/322d928eec34d1c5fcc8097de0e423e852398688/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1BD_death.csv) includes community deaths (excluding long-term care residents) reported between January 23, 2020 and January 24, 2021 in Toronto. Person-level data on confirmed COVID-19 deaths were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm).
@@ -52,7 +52,7 @@ The dataset includes the following information organized by tertiles:
 * Population
 * Total new deaths per 100k
 * Total cumulative deaths per 100k
-* Rolling new deaths per 100k
+* 7-day rolling average of new deaths
 
 ## Figure legends
 ### [Figure 1 A&B](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/4d251054a71f4bdb9ec545bfe971d68441ef89eb/publications/COVID%20risk%20among%20essential%20workers%20in%20Toronto/Figure1_Final.png). Daily per-capita COVID-19 cases (A) and deaths (B) by neighbourhood-level proportion of essential workers in Toronto, Canada (January 23, 2020 to January 24, 2021).
