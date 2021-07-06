@@ -1,5 +1,3 @@
-rm(list=ls(all.names=TRUE)) 
-
 library(ggplot2)
 library(dplyr)
 library(reshape2)
@@ -33,15 +31,34 @@ colnames(DA)
 nrow(DA)
 ncol(DA)
 
+Table =
+  DA %>%
+  group_by(d_essential_rank_tert) %>%
+  summarize(essential_median = median(d_essential, na.rm = T),
+            essential_IQR = paste0(round(quantile(d_essential, 1/4, na.rm = T), 1), " - ", round(quantile(d_essential, 3/4, na.rm = T), 1)),
+            visibleminority_median = median(d_visible_minority, na.rm = T),
+            visibleminority_IQR = paste0(round(quantile(d_visible_minority, 1/4, na.rm = T), 1), " - ", round(quantile(d_visible_minority, 3/4, na.rm = T), 1)),
+            income_median = median(d_after_tax_income_PPE, na.rm = T),
+            income_IQR = paste0(round(quantile(d_after_tax_income_PPE, 1/4, na.rm = T), 1), " - ", round(quantile(d_after_tax_income_PPE, 3/4, na.rm = T), 1)),
+            multigenerationhouse_median = median(d_multi_generation, na.rm = T),
+            multigenerationhouse_IQR = paste0(round(quantile(d_multi_generation, 1/4, na.rm = T), 1), " - ", round(quantile(d_multi_generation, 3/4, na.rm = T), 1)))
+
+write.csv(Table, "./fig/table_propMedian_IQR.csv", row.names = F)
 
 DA_Toronto = subset(DA, DAUID %in% DA_full_list_Toronto$DA2016_num)
 sum(DA_Toronto$DA_population)
 
 
 summary(DA_Toronto$d_sales_services_rank_tert)
+# summary(iphis_DA$d_sales_services_rank_tert)
+# table(iphis_DA$d_suitable_house_rank_tert, exclude = NULL)
 
+########################
+###Cases
 date_cut_employment = "2021-01-24"
 
+iphis_DA_Report_Date_24 = subset(iphis_DA_Report_Date, CASE_REPORTED_DATE_UPDATE <= date_cut_employment)
+ 
 epidemic_curve_by_var <- function(byvar_raw, rank_type){
   
   library(zoo)
@@ -71,7 +88,7 @@ epidemic_curve_by_var <- function(byvar_raw, rank_type){
     summarize(Population = sum(DA_population))
   
   iphis_DA_aggregated =
-    iphis_DA_Report_Date %>% 
+    iphis_DA_Report_Date_24 %>% 
     filter(!is.na(!!byvar)) %>%
     group_by(!!byvar, CASE_REPORTED_DATE_UPDATE) %>%
     summarize(total_new_case = sum(case_new_total_minus_LTCF_resident),
@@ -92,7 +109,10 @@ epidemic_curve_by_var <- function(byvar_raw, rank_type){
 }
 
 
+
 colnames(iphis_DA_Report_Date)
+
+max(iphis_DA_Report_Date$CASE_REPORTED_DATE_UPDATE)
 
 ##########
 # all essential
@@ -110,9 +130,9 @@ table(iphis_DA_aggregated_pop$d_essential_rank_tert, iphis_DA_aggregated_pop$d_e
     ggplot(subset(iphis_DA_aggregated_pop, CASE_REPORTED_DATE_UPDATE <= as.Date(date_cut_employment)),
            aes(CASE_REPORTED_DATE_UPDATE, total_cum_caseper100k)) +  
     geom_line(aes(color=factor(d_essential_rank_tert_label)), size=2) +
-    xlab(label="Report Date") +
+    xlab(label="Date Reported") +
     ylab(label="Cumulative Diagnosed COVID-19 Cases \n per 100k population (excluding LTCH residents)") +
-    labs(color="") + 
+    labs(color="Median (IQR) Proportion Essential Workers") + 
     theme_bw(base_size = 30) +
     theme(panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
@@ -137,7 +157,11 @@ table(iphis_DA_aggregated_pop$d_essential_rank_tert, iphis_DA_aggregated_pop$d_e
                             as.Date("2021-01-24")))+
     scale_y_continuous(limits = c(0, 4000),
                        breaks = seq(0, 4000, 500))+
-    ggtitle("(C)"))
+    # scale_colour_gradient(low = "#FFCEE6", high = "#D7008A", breaks = c(1, 10), trans = 'reverse')+
+    ggtitle("(C)")+ 
+    guides(colour = guide_legend(title.position = "top")))
+
+
 
 
 
@@ -145,9 +169,8 @@ table(iphis_DA_aggregated_pop$d_essential_rank_tert, iphis_DA_aggregated_pop$d_e
     ggplot(subset(iphis_DA_aggregated_pop, CASE_REPORTED_DATE_UPDATE <= as.Date(date_cut_employment)), 
            aes(CASE_REPORTED_DATE_UPDATE, rolling_newcases_100k)) +  
     geom_line(aes(color= factor(d_essential_rank_tert_label)),size=2) +
-    xlab(label="Report Date") +
-    ylab(label="Daily Diagnosed COVID-19 Cases \n per 100k population (excluding LTCH residents)") +
-    labs(color="Median (IQR) Proportion Essential Workers") + 
+    xlab(label="Date Reported") +
+    ylab(label="Daily Diagnosed COVID-19 Cases per 100k population \n (excluding LTCH residents) 7-day rolling average") +
     guides(colour = guide_legend(title.position = "top")) +
     theme_bw(base_size = 30) +
     theme(panel.grid.major = element_blank(),
@@ -194,10 +217,11 @@ table(iphis_DA_aggregated_pop$d_essential_rank_tert, iphis_DA_aggregated_pop$d_e
     annotate("rect", xmin = as.Date("2020-03-17"), xmax = as.Date("2020-05-18"), ymin = 0, ymax = Inf, 
              alpha = .2) +
     annotate("rect", xmin = as.Date("2020-11-23"), xmax = as.Date("2021-01-24"), ymin = 0, ymax = Inf, 
-             alpha = .2))
+             alpha = .2) + theme(legend.position = "none"))
 
-
-
+###########################
+###Death
+iphis_DA_death_24 = subset(iphis_DA_death, CLIENT_DEATH_DATE <= date_cut_employment)
 
 #########################
 epidemic_curve_by_var_death <- function(byvar_raw, 
@@ -233,7 +257,7 @@ epidemic_curve_by_var_death <- function(byvar_raw,
   
   
   iphis_DA_aggregated =
-    iphis_DA_death %>%
+    iphis_DA_death_24 %>%
     filter(!is.na(!!byvar)) %>%
     group_by(!!byvar, !!date_type) %>%
     summarize(total_new_death = sum(death_new_total_minus_LTCF_resident),
@@ -270,8 +294,8 @@ table(iphis_DA_aggregated_pop_death$d_essential_rank_tert, iphis_DA_aggregated_p
                group = factor(d_essential_rank_tert_label),
                color= factor(d_essential_rank_tert_label))) +
     geom_line(size= 1.5) +
-    ylab(label="Cumulative COVID-19-related death per 100k population \n (excluding LTCF residents) 7-day rolling average") +
-    labs(color = "")+
+    ylab(label="Cumulative COVID-19-related death \n per 100k population (excluding LTCH residents)") +
+    labs(color="Median (IQR) Proportion Essential Workers") + 
     # labs(color="Multi-generation tertile") + 
     theme_bw(base_size = 30) +
     theme(panel.grid.major = element_blank(),
@@ -300,8 +324,9 @@ table(iphis_DA_aggregated_pop_death$d_essential_rank_tert, iphis_DA_aggregated_p
     scale_y_continuous(limits = c(0, 140),
                        breaks = seq(0, 140, 20))+
     theme(legend.position="bottom")  + 
-    xlab(label="Death Date")+
-    ggtitle("(D)"))
+    xlab(label="Date of Death")+
+    ggtitle("(D)")+ 
+    guides(colour = guide_legend(title.position = "top")))
 
 
 (Figure1B_shading =
@@ -311,8 +336,7 @@ table(iphis_DA_aggregated_pop_death$d_essential_rank_tert, iphis_DA_aggregated_p
                group = factor(d_essential_rank_tert_label),
                color= factor(d_essential_rank_tert_label))) +
     geom_line(size= 1.5) +
-    ylab(label="Daily COVID-19-related death per 100k population \n (excluding LTCF residents) 7-day rolling average") +
-    labs(color="Median (IQR) Proportion Essential Workers") + 
+    ylab(label="Daily COVID-19-related death per 100k population \n (excluding LTCH residents) 7-day rolling average") +
     guides(colour = guide_legend(title.position = "top")) +
     # labs(color="Multi-generation tertile") + 
     theme_bw(base_size = 30) +
@@ -341,7 +365,7 @@ table(iphis_DA_aggregated_pop_death$d_essential_rank_tert, iphis_DA_aggregated_p
     scale_y_continuous(limits = c(0, 1.5),
                        breaks = seq(0, 1.5, 0.3))+
     theme(legend.position="bottom")  + 
-    xlab(label="Death Date")+
+    xlab(label="Date of Death")+
     ggtitle("(B)")+
     theme(legend.position = "bottom") +
     geom_vline(xintercept = as.Date("2020-03-17"), size = 1, linetype = 2, color = "gray25")+
@@ -364,25 +388,7 @@ table(iphis_DA_aggregated_pop_death$d_essential_rank_tert, iphis_DA_aggregated_p
     annotate("rect", xmin = as.Date("2020-03-17"), xmax = as.Date("2020-05-18"), ymin = 0, ymax = Inf, 
              alpha = .2) +
     annotate("rect", xmin = as.Date("2020-11-23"), xmax = as.Date("2021-01-24"), ymin = 0, ymax = Inf, 
-             alpha = .2))
-
-
-
-g <- arrangeGrob(Figure1A_shading, Figure1B_shading, nrow=1) #generates g
-ggsave(file= paste0("./fig/Figure1_shading.png"), 
-       width = 32, height = 16, limitsize = FALSE, g) #saves g
-
-ggsave(file= paste0("./fig/Figure1_shading.pdf"), 
-       width = 32, height = 16, limitsize = FALSE, g) #saves g
-
-g <- arrangeGrob(Figure1A_shading_bar, Figure1B_shading_bar, nrow=1) #generates g
-
-
-g <- arrangeGrob(Figure2A, Figure2B, nrow=1) #generates g
-ggsave(file= paste0("./fig/Figure2.png"), 
-       width = 32, height = 16, limitsize = FALSE, g) #saves g
-ggsave(file= paste0("./fig/Figure2.pdf"), 
-       width = 32, height = 16, limitsize = FALSE, g) #saves g
+             alpha = .2)+ theme(legend.position = "none"))
 
 
 g <- arrangeGrob(Figure1A_shading, Figure1B_shading, Figure2A, Figure2B, nrow=2) #generates g
