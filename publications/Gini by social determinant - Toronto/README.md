@@ -42,11 +42,20 @@ This work is supported by Canadian Institutes of Health Research Operating Grant
 *Equal contribution
 
 ## Summary of data sources
-### Gini coefficient of COVID-19 cases over time by income 
+### Gini coefficient of COVID-19 cases over time by income (Figure 4)
 This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_after_tax_income_PPE_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by income. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. After-tax, per-person equivalent income ranking across dissemination areas within Toronto was obtained from ICES (a not-for-profit research institute that securely houses Ontario’s health-related data).
 
-### Gini coefficient of COVID-19 cases over time by visible minority
-This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_visible_minority_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by percentage of visible minority. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm)
+### Gini coefficient of COVID-19 cases over time by visible minority (Figure A5)
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_visible_minority_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by percentage of visible minority. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm)
+
+### Gini coefficient of COVID-19 cases over time by recent immigration (Figure A5)
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_recent_immigrantion_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by percentage of recent immigration. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm)
+
+### Gini coefficient of COVID-19 cases over time by suitable housing (Figure A5)
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_suitable_house_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by percentage of suitable housing. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. Neighbourhood-level attributes were obtained from [Statistics Canada 2016 Census](https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/index-eng.cfm)
+
+### Gini coefficient of COVID-19 cases over time by multi-generational household (Figure A5)
+This [dataset](https://github.com/mishra-lab/cihr-multiprovince-covid-project/blob/main/publications/Gini%20by%20social%20determinant%20-%20Toronto/d_multi_generation_decile.zip) includes Gini coefficients of community cases (excluding long-term care residents) reported between January 21, 2020 and November 21, 2020 in Toronto stratified by percentage of multi-generational household. Person-level data on laboratory-confirmed COVID-19 cases were obtained from Contact Management Solutions (CCM)+. Individual-level data have been transformed into aggregated data in the posted dataset. The measure of multi-generational household was curated by and sourced from the Ontario Community Health Profiles Partnership.
 
 The datasets mentioned above include the following information organized by deciles:
 * Total population in each decile (total_pop)
@@ -55,11 +64,11 @@ The datasets mentioned above include the following information organized by deci
 * Proportion of cases in the population (Y)
 
 The Gini coefficient is calculated using the following formula:
-GINI = abs(A-B), where:
-A = sum[X(i) * Y(i+1)]
-B = sum[X(i+1) * Y(i)]
-X(i+1) = lag(X(i))
-Y(i+1) = lag(Y(i))
+* GINI = abs(A-B), where:
+* A = sum[X(i) * Y(i+1)]
+* B = sum[X(i+1) * Y(i)]
+* X(i+1) = lag(X(i))
+* Y(i+1) = lag(Y(i))
 
 More information about the concept of Gini coefficient can be found [here](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1053).
 
