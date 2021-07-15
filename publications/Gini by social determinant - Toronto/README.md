@@ -36,8 +36,8 @@ The datasets mentioned above include the following information organized by deci
 
 The Gini coefficient is calculated using the following formula:
 * GINI = abs(A-B), where:
-* A = sum[X(i) * Y(i+1)]
-* B = sum[X(i+1) * Y(i)]
+   * A = sum[X(i) * Y(i+1)]
+   * B = sum[X(i+1) * Y(i)]
 * X(i+1) = lag(X(i))
 * Y(i+1) = lag(Y(i))
 
