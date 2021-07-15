@@ -34,13 +34,14 @@ The datasets mentioned above include the following information organized by deci
 * Proportion of the population (X)
 * Proportion of cases in the population (Y)
 
-The Gini coefficient is calculated using the following formula:
+The Gini coefficient is calculated using the following formula (1):
 * GINI = abs(A-B), where:
    * A = sum[X(i) * Y(i+1)]
    * B = sum[X(i+1) * Y(i)]
 * X(i+1) = lag(X(i))
 * Y(i+1) = lag(Y(i))
 
-More information about the concept of Gini coefficient can be found [here](http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1053).
+## References
+1. University of Manitoba. Concept: Gini coefficient. 2010. Available from: http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1053
 
 
